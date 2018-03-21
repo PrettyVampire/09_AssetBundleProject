@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 3519120177
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: scene/cube.test
+      Dependencies: {}
+    Info_1:
+      Name: scene/sphere.test
+      Dependencies: {}

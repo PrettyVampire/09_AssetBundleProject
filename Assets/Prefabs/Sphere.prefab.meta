@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: eb613ced90ee84940ad59774e7bca94c
+timeCreated: 1521287689
+licenseType: Free
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: scene/sphere
+  assetBundleVariant: test

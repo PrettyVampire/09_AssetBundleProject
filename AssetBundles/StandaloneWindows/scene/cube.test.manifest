@@ -1,0 +1,29 @@
+ManifestFileVersion: 0
+CRC: 582980940
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 16d740f10a3ec04c78f853fb7f587922
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0615fdd8182050e228ba12bfa176028d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+Assets:
+- Assets/Prefabs/Cube.prefab
+Dependencies:
+- D:/Unity3d/APlan_Siki/09_AssetBundleProject/AssetBundles/StandaloneWindows/material.test
