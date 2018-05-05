@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1021775258
+CRC: 2818648917
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 79576bebe6ac8550b74afccc5c752587
+    Hash: fcd922d93ebdad0ae96e3a8c23d59368
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 55ea4236addb72e0273eadb409492195
+    Hash: 3d2dbf1215e5f6d6251d45ed838a48e0
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -17,13 +17,16 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 23
   Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
 - Class: 33
   Script: {instanceID: 0}
 - Class: 43
+  Script: {instanceID: 0}
+- Class: 48
   Script: {instanceID: 0}
 - Class: 135
   Script: {instanceID: 0}
 Assets:
 - Assets/Prefabs/Sphere.prefab
-Dependencies:
-- D:/Unity3d/APlan_Siki/09_AssetBundleProject/Assets/AssetBundles/material.test
+Dependencies: []

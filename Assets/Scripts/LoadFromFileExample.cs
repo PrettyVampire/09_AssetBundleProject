@@ -8,13 +8,12 @@ public class LoadFromFileExample : MonoBehaviour
 {
     void Start()
     {
-
         string path = "Assets/AssetBundles/scene/sphere.test";
         //AssetBundle share = AssetBundle.LoadFromFile("Assets/AssetBundles/material.test");//如果材质是独立的一个包，就需要先加载材质
 
         AssetBundle assetBundle = AssetBundle.LoadFromFile("Assets/AssetBundles/AssetBundles");
         AssetBundleManifest manifest = assetBundle.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
-        string[] dependencies = manifest.GetAllDependencies("sphere.test"); //Pass the name of the bundle you want the dependencies for.
+        string[] dependencies = manifest.GetAllDependencies("scene/sphere.test"); //Pass the name of the bundle you want the dependencies for.
         foreach (string dependency in dependencies)
         {
             AssetBundle.LoadFromFile(Path.Combine("Assets/AssetBundles", dependency));
@@ -43,12 +42,13 @@ public class LoadFromFileExample : MonoBehaviour
         //string wwwPath = @"file://D:/Unity3d/APlan_Siki/09_AssetBundleProject/Assets/AssetBundles/scene/sphere.test";
         string wwwPath = @"http://172.0.0.1/AssetBundles/scene/sphere.test";
         var www = WWW.LoadFromCacheOrDownload(wwwPath, 5);
-        yield return www;
+        yield return www;//等待加载完毕
         if (!string.IsNullOrEmpty(www.error))
         {
             Debug.Log(www.error);
-            yield break;
+            yield break;//迭代停止
         }
+
         AssetBundle ab = www.assetBundle;
 
         var prefab = ab.LoadAsset<GameObject>("Sphere");
@@ -67,5 +67,4 @@ public class LoadFromFileExample : MonoBehaviour
         var prefab = ab.LoadAsset<GameObject>("Sphere");
         GameObject.Instantiate(prefab);
     }
-
 }
